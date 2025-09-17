@@ -1,15 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CI/CD Deployment Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: #f4f7fb;
+        }
+        .container {
+            margin-top: 100px;
+        }
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.2em;
+            color: #333;
+        }
+        code {
+            background: #eee;
+            padding: 3px 6px;
+            border-radius: 4px;
+        }
+        hr {
+            margin: 40px auto;
+            width: 60%;
+            border: 0;
+            height: 1px;
+            background: #ccc;
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: gray;
+        }
+    </style>
 </head>
-<body style="font-family: Arial, sans-serif; text-align: center; margin-top: 100px;">
-    <h1 style="color: blue;">🚀 CI/CD Pipeline Deployment Successful!</h1>
-    <p>This page was deployed automatically using <b>Jenkins + Ansible + GitHub</b>.</p>
-    <p>Every time you update the code in GitHub, Jenkins will fetch it and Ansible will deploy it to <code>/var/www/html/</code>.</p>
-    <hr style="margin: 40px;">
-    <footer>
-        <p style="color: gray;">Powered by CI/CD Automation</p>
-    </footer>
+<body>
+    <div class="container">
+        <h1>🚀 CI/CD Pipeline Deployment Successful!</h1>
+        <p>This page was deployed automatically using:</p>
+        <p><b>🔹 GitHub → Jenkins → Ansible → Nginx</b></p>
+        <p>Every time you update the code in GitHub,<br>
+           Jenkins fetches it and Ansible deploys it to <code>/var/www/html/</code>.</p>
+        <hr>
+        <footer>
+            <p>✨ Powered by CI/CD Automation ✨</p>
+        </footer>
+    </div>
 </body>
 </html>
