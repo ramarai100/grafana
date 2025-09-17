@@ -1,0 +1,17 @@
+---
+- name: Deploy code to Nginx document root
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Copy code from Jenkins workspace to /var/www/html
+      copy:
+        src: /var/lib/jenkins/workspace/test1/yourfile.html
+        dest: /var/www/html/index.html
+        owner: www-data
+        group: www-data
+        mode: '0644'
+
+    - name: Restart nginx
+      service:
+        name: nginx
+        state: restarted
